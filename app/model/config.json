@@ -1,0 +1,41 @@
+{
+    "model-name": "anemia.onnx",
+    "pre-trained": "yes",
+    "data-type": "tabular",
+    "data": {
+        "observation": {
+            "laboratory-results": [
+                "Hemoglobin",
+                "MCH",
+                "MCHC",
+                "MCV"
+            ],
+            "vital-signs": [
+                "weight",
+                "respiratory-rate",
+                "heart-rate"
+            ]
+        },
+        "condition": [
+            "anemia"
+        ]
+    },
+    "triggers": [
+        {
+            "type": "metrics",
+            "fields": [
+                "accuracy",
+                "confusion-matrix",
+                "precision-and-recall",
+                "f1-score",
+                "au-roc",
+                "mae",
+                "mse", 
+                "rmse", 
+                "r-squared"
+            ]
+        }
+    ],
+    "hyperparameters": {}
+}
+
