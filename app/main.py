@@ -22,7 +22,7 @@ class PredictionOut(BaseModel):
 @app.get("/")
 def root():
     return {"message": "Welcome to Anemia Predict Model FastAPI",
-            "predict": "POST = /predict_anemia", "config_file": "GET = /config_file",
+            "predict": "POST = /predict", "config_file": "GET = /config_file",
             "model accuracy": "..."}
 
 # Define the route to predict anemia
